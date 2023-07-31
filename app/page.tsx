@@ -1,8 +1,8 @@
 
-export default function Home() {
+export default function page() {
   return (
-    <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl ">
-      <h1 className="text-4xl">hello world</h1>
-    </main>
+      <div className="bg-neutral-400 w-screen h-screen">
+        <h1 className="bg-red-500 h-1/5 w-3/5 mx-auto  text-2xl " > Max's portfolio Site  </h1> 
+      </div>
   )
 }
