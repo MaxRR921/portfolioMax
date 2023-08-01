@@ -15,7 +15,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>
+      <body className="font-rubik">
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar/>
           {children}

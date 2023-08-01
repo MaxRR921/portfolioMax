@@ -8,29 +8,12 @@ import { IoMdMenu, IoMdClose } from "react-icons/io"
 
 export const Navbar = () => {
   return (
-    <header>
-         <div className='flex flex-row '>
-          <Link href = "/" className='mx-10 mx-auto'> Home </Link>
+    <div className='h-32 flex md:justify-center justify-start bg-stone-200'>
+      <div className='flex md:w-5/12 items-center'>
+          <Link href = "/" className='mx-5'> Home </Link>
           <Link href = "/projects"> Projects </Link>
-         </div>
-         {/* 
-         <div className='absolute top-0 right-0 h-16 w-9'>
-            {curentTheme === "dark" ? (
-              <button 
-              onClick={()=>setTheme("light")}
-              className='bg-slate-100 p-2 rounded-xl'>
-                <RiSunLine color = 'black'/>
-              </button>
-            ) : (
-              <button 
-              onClick={()=>setTheme("dark")}
-              className='bg-slate-100 p-2 rounded-xl'>
-                <RiMoonFill/>
-              </button>
-          )}
-        </div>
-            */}
-    </header>
+      </div>
+    </div>
   )
 }
 export default Navbar
