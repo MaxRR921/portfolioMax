@@ -4,9 +4,3 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@layer base{
-    body {
-        @apply dark:bg-stone-500 bg-stone-200 dark:text-grey text-black 
-    }
-}
