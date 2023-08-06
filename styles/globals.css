@@ -7,6 +7,6 @@
 
 @layer base{
     body {
-        @apply dark:bg-stone-200 bg-stone-200 text-black 
+        @apply dark:bg-stone-500 bg-stone-200 dark:text-grey text-black 
     }
 }
