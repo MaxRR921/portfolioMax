@@ -8,8 +8,8 @@ import { IoMdMenu, IoMdClose } from "react-icons/io"
 
 export const Navbar = () => {
   return (
-    <div className='h-32 flex md:justify-center justify-start bg-stone-200'>
-      <div className='flex md:w-5/12 items-center'>
+    <div className='h-32 flex lg:justify-center justify-start bg-stone-200'>
+      <div className='flex lg:w-5/12 items-center'>
           <Link href = "/" className='mx-5'> Home </Link>
           <Link href = "/projects"> Projects </Link>
       </div>
