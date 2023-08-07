@@ -1,0 +1,13 @@
+\
+Created a 3D physical constraint-based rope simulation for my team's game, Roped Together.
+The mathematical methods used were ispired by [***Sebastian Lague's***](https://github.com/SebLague/Cloth-and-IK-Test) use of Verlet Integration
+in his rope simulation.\
+-\
+The system works by having a series of points constrained to be a fixed distance apart. Gravity is then applied, then the points fall, 
+but since they can only be a certain distance apart, they behave like a rope.\
+-\
+I added additional functionalities to the simulation to turn it into a game mechanic. All the points in the rope 
+are in a list, and can be pinned to any other Unity Engine game object. From there, I added functions to wind up the rope at 
+the waist of the character by pinning every few points to objects attached them. While climbing, the character lets out portions of the 
+rope and pins points to clip game objects as the character climbs, and when the character falls, they are pinned to a point on the 
+rope, causing it to catch them. 
