@@ -9,4 +9,10 @@
     body {
         @apply bg-stone-200 text-black dark:text-black 
     }
+    h1 {
+        @apply bg-stone-200 text-black dark:text-black text-2xl
+    }
+    h2 {
+        @apply bg-stone-200 text-black dark:text-black text-xl
+    }
 }
