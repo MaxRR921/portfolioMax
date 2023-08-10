@@ -1,5 +1,6 @@
 import Title from './Title.mdx'
 import Body from './Body.mdx'
+import  Link  from 'next/link'
 export default function page() {
     return (
           <div className='h-screen flex lg:justify-center justify-start bg-stone-200 text-black'>
@@ -9,7 +10,28 @@ export default function page() {
                   <Title/>
                 </div>
                 <div>
-                  <Body/>
+                  <br>
+                  </br>
+                  <Link href = '/projects/RopedTogether' className='font-bold hover:bg-stone-300 rounded-md'> Roped Together<br></br> </Link>
+                  3D mountain climbing game. Winner at Oregon Game Project Challenge 2022
+                </div>
+                <div>
+                  <br>
+                  </br>
+                  <Link href = '/projects/RopeSim' className='font-bold hover:bg-stone-300 rounded-md'> 3D Rope Simulation <br></br> </Link>
+                  Constraint based rope simulation created for Roped together using C# and the unity engine line renderer
+                </div>
+                <div>
+                  <br>
+                  </br>
+                  <Link href = '/projects/RopeSim' className='font-bold hover:bg-stone-300 rounded-md'> AI Hand Washing Tool <br></br> </Link>
+                  Continued work with company <Link href = '(https://www.layerjot.com/' className='font-bold hover:bg-stone-300 rounded-md'>LayerJot</Link>  on an AI computer vision hand washing coaching system
+                </div>
+                <div>
+                  <br>
+                  </br>
+                  <Link href = '/projects/Dance' className='font-bold hover:bg-stone-300 rounded-md'> Dance Performance 3D procedural system <br></br> </Link>
+                  Created software in Unity 3D for procedural camera movement, lighting and animation system for professional dance performance.
                 </div>
               </div>
             </div>
