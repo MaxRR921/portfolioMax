@@ -24,7 +24,7 @@ export default function page() {
                 <div>
                   <br>
                   </br>
-                  <Link href = '/projects/RopeSim' className='font-bold hover:bg-stone-300 rounded-md'> AI Hand Washing Tool <br></br> </Link>
+                  <Link href = '/projects/LayerJot' className='font-bold hover:bg-stone-300 rounded-md'> AI Hand Washing Tool <br></br> </Link>
                   Continued work with company <Link href = '(https://www.layerjot.com/' className='font-bold hover:bg-stone-300 rounded-md'>LayerJot</Link>  on an AI computer vision hand washing coaching system
                 </div>
                 <div>
