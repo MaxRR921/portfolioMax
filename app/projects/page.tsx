@@ -12,25 +12,25 @@ export default function page() {
                 <div>
                   <br>
                   </br>
-                  <Link href = '/projects/RopedTogether' className='font-bold hover:bg-stone-300 rounded-md'> Roped Together<br></br> </Link>
+                  <Link href = '/projects/RopedTogether' className='font-bold hover:bg-stone-300 rounded-md underline'> Roped Together<br></br> </Link>
                   3D mountain climbing game. Winner at Oregon Game Project Challenge 2022
                 </div>
                 <div>
                   <br>
                   </br>
-                  <Link href = '/projects/RopeSim' className='font-bold hover:bg-stone-300 rounded-md'> 3D Rope Simulation <br></br> </Link>
+                  <Link href = '/projects/RopeSim' className='font-bold hover:bg-stone-300 rounded-md underline'> 3D Rope Simulation <br></br> </Link>
                   Constraint based rope simulation created for Roped together using C# and the unity engine line renderer
                 </div>
                 <div>
                   <br>
                   </br>
-                  <Link href = '/projects/LayerJot' className='font-bold hover:bg-stone-300 rounded-md'> AI Hand Washing Tool <br></br> </Link>
+                  <Link href = '/projects/LayerJot' className='font-bold hover:bg-stone-300 rounded-md underline'> AI Hand Washing Tool <br></br> </Link>
                   Continued work with company <Link href = '(https://www.layerjot.com/' className='font-bold hover:bg-stone-300 rounded-md'>LayerJot</Link>  on an AI computer vision hand washing coaching system
                 </div>
                 <div>
                   <br>
                   </br>
-                  <Link href = '/projects/Dance' className='font-bold hover:bg-stone-300 rounded-md'> Dance Performance 3D procedural system <br></br> </Link>
+                  <Link href = '/projects/Dance' className='font-bold hover:bg-stone-300 rounded-md underline'> Dance Performance 3D procedural system <br></br> </Link>
                   Created software in Unity 3D for procedural camera movement, lighting and animation system for professional dance performance.
                 </div>
               </div>
