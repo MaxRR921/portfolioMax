@@ -25,7 +25,7 @@ export default function page() {
                   <br>
                   </br>
                   <Link href = '/projects/LayerJot' className='font-bold hover:bg-stone-300 rounded-md underline'> AI Hand Washing Tool <br></br> </Link>
-                  Continued work with company <Link href = '(https://www.layerjot.com/' className='font-bold hover:bg-stone-300 rounded-md'>LayerJot</Link>  on an AI computer vision hand washing coaching system
+                  Continued work with company <Link href = '(https://www.layerjot.com/' className='font-bold hover:bg-stone-300 rounded-md underline'>LayerJot</Link>  on an AI computer vision hand washing coaching system
                 </div>
                 <div>
                   <br>
