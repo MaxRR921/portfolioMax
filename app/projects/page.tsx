@@ -12,6 +12,12 @@ export default function page() {
                 <div>
                   <br>
                   </br>
+                  <Link href = '/projects/stressSensor' className='font-bold hover:bg-stone-300 rounded-md underline'>Fiber Optic Stress Seonsor<br></br></Link> 
+                  Stess sensor to evaluate material characteristics of different tissues
+                </div>
+                <div>
+                  <br>
+                  </br>
                   <Link href = '/projects/RopedTogether' className='font-bold hover:bg-stone-300 rounded-md underline'> Roped Together<br></br> </Link>
                   3D mountain climbing game. Winner at Oregon Game Project Challenge 2022
                 </div>
