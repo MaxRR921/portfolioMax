@@ -4,20 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@layer base{
+@layer base {
     body {
-        @apply bg-black text-white dark:text-white 
+        @apply bg-black text-gray-200 dark:text-gray-200;  /* Applying off-white color in both light and dark themes */
     }
     h1 {
-        @apply bg-black text-white dark:text-white text-2xl
+        @apply bg-black text-white dark:text-white text-2xl;  /* h1 remains bright white for contrast */
     }
     h2 {
-        @apply bg-black text-white dark:text-white text-xl
+        @apply bg-black text-gray-200 dark:text-gray-200 text-xl;  /* Applying off-white color to h2 as well */
     }
 }
-
-
 
 @layer utilities {
     .custom-underline {
@@ -26,6 +23,6 @@
     }
     .custom-underline2 {
         text-decoration: underline;
-        text-underline-offset: 2px;
+        text-underline-offset: 2px; /* A smaller offset for a more subtle underline */
     }
 }
