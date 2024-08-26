@@ -16,3 +16,12 @@
         @apply bg-stone-200 text-black dark:text-black text-xl
     }
 }
+
+
+
+@layer utilities {
+    .custom-underline {
+        text-decoration: underline;
+        text-underline-offset: 4px; /* Adjusts the underline to be 4px below the text */
+    }
+}
