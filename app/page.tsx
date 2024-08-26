@@ -8,7 +8,7 @@ export default function page() {
     <div className='h-screen flex lg:justify-center justify-start text-white'>
      <div className='flex lg:w-5/12 items-start h-12'>
       <div className='mx-5'>
-        <h1 className='text-4xl text-white'>Projects</h1>
+        <h1 className='text-4xl text-white'>Maxwell Richter</h1>
         <div className='font-bold flex justify-start text-white'>
           <div>marichter@chapman.edu | 503-509-2979</div>
         </div>
