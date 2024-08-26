@@ -6,13 +6,13 @@
 
 @layer base {
     body {
-        @apply bg-black text-gray-200 dark:text-gray-200;  /* Applying off-white color in both light and dark themes */
+        @apply bg-black text-gray-700 dark:text-gray-200;  /* Applying off-white color in both light and dark themes */
     }
     h1 {
         @apply bg-black text-white dark:text-white text-2xl;  /* h1 remains bright white for contrast */
     }
     h2 {
-        @apply bg-black text-gray-200 dark:text-gray-200 text-xl;  /* Applying off-white color to h2 as well */
+        @apply bg-black text-gray-700 dark:text-gray-200 text-xl;  /* Applying off-white color to h2 as well */
     }
 }
 
