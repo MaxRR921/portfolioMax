@@ -15,7 +15,7 @@ export default function page() {
         <div className='font-bold flex justify-start'> 
         <Link href="https://www.linkedin.com/in/maxwell-richter-0b8a671b9/" className='underline pr-1'>
           <span className='hover:bg-stone-700 rounded-md'>
-            LinkedIn&nbsp;
+            LinkedIn
           </span>
         </Link>
         <Link href="https://github.com/MaxRR921" className='underline pl-1'>
