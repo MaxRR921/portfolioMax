@@ -24,4 +24,8 @@
         text-decoration: underline;
         text-underline-offset: 4px; /* Adjusts the underline to be 4px below the text */
     }
+    .custom-underline2 {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
 }
