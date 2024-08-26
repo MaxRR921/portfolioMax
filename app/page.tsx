@@ -13,12 +13,12 @@ export default function page() {
           <div>marichter@chapman.edu | 503-509-2979</div>
         </div>
         <div className='font-bold flex justify-start'> 
-        <Link href="https://www.linkedin.com/in/maxwell-richter-0b8a671b9/" className='underline pr-1'>
+        <Link href="https://www.linkedin.com/in/maxwell-richter-0b8a671b9/" className='custom-underline pr-1'>
           <span className='hover:bg-stone-700 rounded-md'>
             LinkedIn
           </span>
         </Link>
-        <Link href="https://github.com/MaxRR921" className='underline pl-1'>
+        <Link href="https://github.com/MaxRR921" className='custom-underline pl-1'>
           <span className='hover:bg-stone-700 rounded-md'>
             GitHub
           </span>
