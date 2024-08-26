@@ -6,7 +6,7 @@ export default function page() {
           <div className='h-screen flex lg:justify-center justify-start'>
             <div className='flex lg:w-5/12 items-start h-12'>
               <div className='mx-5'>
-                <div>
+                <div className='text-white'>
                   <Title/>
                 </div>
                 <div>
