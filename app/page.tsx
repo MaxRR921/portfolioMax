@@ -13,8 +13,8 @@ export default function page() {
           <div>marichter@chapman.edu | 503-509-2979</div>
         </div>
         <div className='font-bold flex justify-start'> 
-          <Link href= "https://www.linkedin.com/in/maxwell-richter-0b8a671b9/" className='hover:bg-black rounded-md text-underline'> LinkedIn&nbsp;</Link>
-          <Link href = "https://github.com/MaxRR921" className='hover:bg-black rounded-md text-underline'>GitHub </Link>
+          <Link href= "https://www.linkedin.com/in/maxwell-richter-0b8a671b9/" className='hover:bg-stone-400 rounded-md underline'> LinkedIn&nbsp;</Link>
+          <Link href = "https://github.com/MaxRR921" className='hover:bg-stone-400 rounded-md underline'>GitHub </Link>
         </div>
         <div>
           <HomeBody/>
