@@ -10,6 +10,9 @@ export default function page() {
       <div className='mx-5'>
         <h1 className='text-4xl'>Maxwell Richter</h1>
         <div className='font-bold flex justify-start'>
+          <div>Computer Science @ Chapman</div>
+        </div>
+        <div className='font-bold flex justify-start'>
           <div>marichter@chapman.edu | 503-509-2979</div>
         </div>
         <div className='font-bold flex justify-start'> 
