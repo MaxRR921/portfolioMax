@@ -12,7 +12,7 @@ export default function page() {
         <div className='font-bold flex justify-start'>
           <div>Computer Science @ Chapman</div>
         </div>
-        <div className='font-bold flex justify-start'> 
+        <div className='flex justify-start'> 
         <Link href="https://www.linkedin.com/in/maxwell-richter-0b8a671b9/" className='custom-underline2 pr-1'>
           <span className='hover:bg-stone-700 rounded-md'>
             LinkedIn
