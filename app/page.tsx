@@ -14,12 +14,12 @@ export default function page() {
         </div>
         <div className='font-bold flex justify-start'> 
         <Link href="https://www.linkedin.com/in/maxwell-richter-0b8a671b9/" className='underline pr-1'>
-          <span className='hover:bg-stone-400 rounded-md'>
+          <span className='hover:bg-stone-900 rounded-md'>
             LinkedIn&nbsp;
           </span>
         </Link>
         <Link href="https://github.com/MaxRR921" className='underline pl-1'>
-          <span className='hover:bg-stone-400 rounded-md'>
+          <span className='hover:bg-stone-900 rounded-md'>
             GitHub
           </span>
         </Link>
