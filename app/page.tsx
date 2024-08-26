@@ -8,7 +8,7 @@ export default function page() {
     <div className='h-screen flex lg:justify-center justify-start black'>
      <div className='flex lg:w-5/12 items-start h-12'>
       <div className='mx-5'>
-        <div className='text-4xl'>
+        <div className='text-4xl text-white'>
           <HelloWorld/>
         </div>
         <div className='font-bold flex justify-start'>
