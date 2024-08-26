@@ -12,9 +12,6 @@ export default function page() {
         <div className='font-bold flex justify-start'>
           <div>Computer Science @ Chapman</div>
         </div>
-        <div className='font-bold flex justify-start'>
-          <div>marichter@chapman.edu | 503-509-2979</div>
-        </div>
         <div className='font-bold flex justify-start'> 
         <Link href="https://www.linkedin.com/in/maxwell-richter-0b8a671b9/" className='custom-underline2 pr-1'>
           <span className='hover:bg-stone-700 rounded-md'>
