@@ -7,13 +7,13 @@
 
 @layer base{
     body {
-        @apply bg-black text-white dark:text-white 
+        @apply bg-black text-warm-gray-100 dark:text-white 
     }
     h1 {
         @apply bg-black text-white dark:text-white text-2xl
     }
     h2 {
-        @apply bg-black text-white dark:text-white text-xl
+        @apply bg-black text-warm-gray-100 dark:text-white text-xl
     }
 }
 
