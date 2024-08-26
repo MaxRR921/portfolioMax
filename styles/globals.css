@@ -7,13 +7,13 @@
 
 @layer base{
     body {
-        @apply bg-stone-200 text-black dark:text-black 
+        @apply bg-black text-white dark:text-black 
     }
     h1 {
-        @apply bg-stone-200 text-black dark:text-black text-2xl
+        @apply bg-black text-white dark:text-black text-2xl
     }
     h2 {
-        @apply bg-stone-200 text-black dark:text-black text-xl
+        @apply bg-black text-white dark:text-black text-xl
     }
 }
 
