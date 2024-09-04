@@ -10,7 +10,7 @@ export default function page() {
                 <div>
                   <br>
                   </br>
-                  <Link href = '/projects/stressSensor' className='font-bold hover:bg-stone-700 rounded-md underline'>Fiber Optic Stress Seonsor<br></br></Link> 
+                  <Link href = '/projects/stressSensor' className='font-bold hover:bg-stone-700 rounded-md underline'>Fiber Optic Stress Sensor<br></br></Link> 
                   Stess sensor to evaluate material characteristics of different tissues
                 </div>
                 <div>
