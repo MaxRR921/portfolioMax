@@ -10,7 +10,7 @@ export const Navbar = () => {
   return (
     <div className='h-32 flex lg:justify-center justify-start bg-black'>
       <div className='flex lg:w-5/12 items-center'>
-          <Link href = "/" className='mx-5 hover:bg-stone-700 rounded-md text-white custom-underline'> Home </Link>
+          <Link href = "/" className='mx-5 hover:bg-stone-700 rounded-md text-white custom-underline'> Hello </Link>
           <Link href = "/projects" className='hover:bg-stone-700 rounded-md text-white custom-underline'> Projects </Link>
       </div>
     </div>
