@@ -1,4 +1,3 @@
-"use client"
 import HelloWorld from './title.mdx'
 import Subtitle from './subtitle.mdx'
 import Github from './github.mdx'
