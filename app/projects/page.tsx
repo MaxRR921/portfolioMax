@@ -1,3 +1,4 @@
+'use client'
 import Title from './Title.mdx'
 import Body from './Body.mdx'
 import  Link  from 'next/link'
