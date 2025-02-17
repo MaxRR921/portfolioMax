@@ -6,7 +6,7 @@
 
 @layer base {
     body {
-        @apply bg-white text-gray-900 dark:text-gray-200;  /* Applying off-white color in both light and dark themes */
+        @apply bg-white text-black-900 dark:bg-black text-gray-200;  /* Applying off-white color in both light and dark themes */
     }
     h1 {
         @apply bg-black text-white dark:text-white text-2xl;  /* h1 remains bright white for contrast */
