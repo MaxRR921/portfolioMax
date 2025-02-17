@@ -35,15 +35,6 @@ export const Navbar = () => {
         </Link>
       </div>
 
-      {/* Dark Mode Toggle Button */}
-      {mounted && (
-        <button
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="ml-auto mr-5 p-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded-md shadow-md"
-        >
-          {theme === "dark" ? <RiSunLine size={24} /> : <RiMoonFill size={24} />}
-        </button>
-      )}
     </div>
   );
 };
