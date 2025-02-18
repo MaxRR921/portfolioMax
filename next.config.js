@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true, // Enables best practices
   experimental: {
-    appDir: true,
-    mdxRs: true
+    appDir: true, // Ensures App Router is used
+    mdxRs: true, // Enables MDX support
   },
-}
- 
-const withMDX = require('@next/mdx')()
-module.exports = withMDX(nextConfig)
+  pageExtensions: ["ts", "tsx", "mdx"], // Ensures MDX works
+};
+
+const withMDX = require("@next/mdx")();
+module.exports = withMDX(nextConfig);
