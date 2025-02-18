@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true, // Enables best practices
+  reactStrictMode: true,
   experimental: {
-    appDir: true, // Ensures App Router is used
-    mdxRs: true, // Enables MDX support
+    mdxRs: true, // Keep this if using MDX
   },
-  pageExtensions: ["ts", "tsx", "mdx"], // Ensures MDX works
+  pageExtensions: ["ts", "tsx", "mdx"], // Ensures MDX pages are recognized
 };
 
 const withMDX = require("@next/mdx")();

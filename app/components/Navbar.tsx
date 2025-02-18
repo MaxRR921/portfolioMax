@@ -12,7 +12,7 @@ export const Navbar = () => {
       <div className="flex lg:w-5/12 items-center">
         <Link href="/" passHref>
           <span
-            className={`mx-5 hover:bg-stone-300 dark:hover:bg-stone-700 rounded-md text-black dark:text-gray-400 custom-underline ${
+            className={`mx-5 hover:bg-stone-300 dark:hover:bg-stone-700 rounded-md text-black dark:text-grey-400 custom-underline ${
               pathname === "/" ? "font-bold" : ""
             }`}
           >
@@ -21,7 +21,7 @@ export const Navbar = () => {
         </Link>
         <Link href="/projects" passHref>
           <span
-            className={`hover:bg-stone-300 dark:hover:bg-stone-700 rounded-md text-black dark:text- custom-underline ${
+            className={`hover:bg-stone-300 dark:hover:bg-stone-700 rounded-md text-black dark:text-grey-400 custom-underline ${
               pathname === "/projects" ? "font-bold" : ""
             }`}
           >
