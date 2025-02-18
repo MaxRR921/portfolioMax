@@ -6,15 +6,16 @@
 
 @layer base {
     body {
-        @apply bg-white text-black dark:bg-black text-gray-200;  /* Applying off-white color in both light and dark themes */
+        @apply bg-white text-black dark:bg-black dark:text-gray-200; /* Fix: Apply text-gray-200 only in dark mode */
     }
     h1 {
-        @apply bg-white text-black dark:bg-black text-gray-200 text-2xl;  /* h1 remains bright white for contrast */
+        @apply bg-white text-black dark:bg-black dark:text-white text-2xl; /* Fix: Ensure text is black in light mode */
     }
     h2 {
-        @apply bg-white text-black dark:bg-black text-gray-200 text-xl;  /* Applying off-white color to h2 as well */
+        @apply bg-white text-black dark:bg-black dark:text-gray-200 text-xl; /* Fix: Ensure text is black in light mode */
     }
 }
+
 
 @layer utilities {
     .custom-underline {
