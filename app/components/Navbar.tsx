@@ -10,7 +10,7 @@ export const Navbar = () => {
   const pathname = usePathname()
 
   return (
-    <div className='h-32 flex lg:justify-center justify-start bg-stone-200 dark:bg-stone-900'>
+    <div className='h-32 flex lg:justify-center justify-start bg-stone-200 dark:bg-black'>
       <div className='flex lg:w-5/12 items-center'>
         <Link 
           href="/" 
