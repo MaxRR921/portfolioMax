@@ -4,7 +4,6 @@ import Github from './github.mdx'
 import HomeBody from './homeBody.mdx'
 import Link from 'next/link'
 import TechnicalSkills from './technicalSkills.mdx'
-import RopeSim from './components/RopeSim'
 
 export default function Page() {
   return (
