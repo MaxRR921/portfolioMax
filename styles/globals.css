@@ -9,7 +9,7 @@
         @apply bg-stone-200 text-black dark:bg-black dark:text-gray-400; /* Fix: Apply text-gray-200 only in dark mode */
     }
     h1 {
-        @apply bg-stone-200 text-black dark:bg-black dark:text-gray-400 text-2xl; /* Fix: Ensure text is black in light mode */
+        @apply text-black dark:text-gray-400 text-2xl; /* Fix: Ensure text is black in light mode */
     }
     h2 {
         @apply bg-stone-200 text-black dark:bg-black dark:text-gray-400 text-xl; /* Fix: Ensure text is black in light mode */

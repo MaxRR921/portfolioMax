@@ -28,36 +28,40 @@ export const Navbar = () => {
       <div className="flex lg:w-5/12 items-center relative">
         {/* Navigation Links */}
         <div className="relative flex space-x-10">
-          {/* Home Link */}
-          <Link href="/" passHref>
-            <span
-              className={`relative px-2 pb-1 hover:bg-stone-300 dark:hover:bg-stone-700 rounded-md text-black dark:text-gray-400 `}
-            >
-              Home
-            </span>
-          </Link>
+          
+          {/* Home Link with Background Highlight */}
+          <div className="relative flex flex-col items-center">
+            <Link href="/" passHref>
+              <motion.div
+                className="relative px-4 py-1 rounded-md text-black dark:text-gray-400 bg-gray-400 bg-opacity-20 dark:bg-gray-500 dark:bg-opacity-20 transition-all duration-200 hover:bg-gray-400 hover:bg-opacity-30 dark:hover:bg-gray-600 cursor-pointer"
+              >
+                Home
+              </motion.div>
+            </Link>
+          </div>
 
-          {/* Projects Link */}
-          <Link href="/projects" passHref>
-            <span
-              className={`relative px-2 pb-1 hover:bg-stone-300 dark:hover:bg-stone-700 rounded-md text-black dark:text-gray-400 `}
-            >
-              Projects
-            </span>
-          </Link>
+          {/* Projects Link with Background Highlight */}
+          <div className="relative flex flex-col items-center">
+            <Link href="/projects" passHref>
+              <motion.div
+                className="relative px-4 py-1 rounded-md text-black dark:text-gray-400 bg-gray-400 bg-opacity-20 dark:bg-gray-500 dark:bg-opacity-20 transition-all duration-200 hover:bg-gray-400 hover:bg-opacity-30 dark:hover:bg-gray-600 cursor-pointer"
+              >
+                Projects
+              </motion.div>
+            </Link>
+          </div>
 
           {/* Underline Animation */}
           <motion.div
             layoutId="underline"
             className={`absolute bottom-0 h-[2px] ${underlineColor} rounded-md`}
-            initial={{ left: "0px", width: "40px" }} // Starts at left of "Home"
+            initial={{ left: "0px", width: "40px" }} // Starts at "Home"
             animate={{
-              left: pathname === "/projects" ? "68px" : "-30px", // Adjusts movement distance
-              width: pathname === "/projects" ? "55px" : "40px", // Adjust width dynamically
+              left: pathname.startsWith("/projects") ? "90px" : "-25px", // Keeps underline at Projects for all /projects/*
+              width: pathname.startsWith("/projects") ? "55px" : "40px", // Adjust width dynamically
             }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           />
-
         </div>
       </div>
     </div>
