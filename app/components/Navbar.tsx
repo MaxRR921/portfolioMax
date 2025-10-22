@@ -27,13 +27,13 @@ export const Navbar = () => {
     <div className="h-32 flex lg:justify-center justify-start bg-stone-200 dark:bg-black relative">
       <div className="flex lg:w-5/12 items-center relative">
         {/* Navigation Links */}
-        <div className="relative flex space-x-10">
+        <div className="relative flex space-x-15">
           
           {/* Home Link with Background Highlight */}
           <div className="relative flex flex-col items-center">
             <Link href="/" passHref>
               <motion.div
-                className="relative px-6 py-1 rounded-md text-black dark:text-gray-400 bg-gray-400 bg-opacity-20 dark:bg-gray-500 dark:bg-opacity-20 transition-all duration-200 hover:bg-gray-400 hover:bg-opacity-30 dark:hover:bg-gray-600 cursor-pointer"
+                className="relative px-4 py-1 rounded-md text-black dark:text-gray-400 bg-gray-400 bg-opacity-20 dark:bg-gray-500 dark:bg-opacity-20 transition-all duration-200 hover:bg-gray-400 hover:bg-opacity-30 dark:hover:bg-gray-600 cursor-pointer"
               >
                 Home
               </motion.div>
@@ -44,7 +44,7 @@ export const Navbar = () => {
           <div className="relative flex flex-col items-center">
             <Link href="/projects" passHref>
               <motion.div
-                className="relative px-5 py-1 rounded-md text-black dark:text-gray-400 bg-gray-400 bg-opacity-20 dark:bg-gray-500 dark:bg-opacity-20 transition-all duration-200 hover:bg-gray-400 hover:bg-opacity-30 dark:hover:bg-gray-600 cursor-pointer"
+                className="relative px-4 py-1 rounded-md text-black dark:text-gray-400 bg-gray-400 bg-opacity-20 dark:bg-gray-500 dark:bg-opacity-20 transition-all duration-200 hover:bg-gray-400 hover:bg-opacity-30 dark:hover:bg-gray-600 cursor-pointer"
               >
                 Projects
               </motion.div>
