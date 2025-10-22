@@ -33,7 +33,7 @@ export const Navbar = () => {
           <div className="relative flex flex-col items-center">
             <Link href="/" passHref>
               <motion.div
-                className="relative px-4 py-1 rounded-md text-black dark:text-gray-400 bg-gray-400 bg-opacity-20 dark:bg-gray-500 dark:bg-opacity-20 transition-all duration-200 hover:bg-gray-400 hover:bg-opacity-30 dark:hover:bg-gray-600 cursor-pointer"
+                className="relative px-6 py-1 rounded-md text-black dark:text-gray-400 bg-gray-400 bg-opacity-20 dark:bg-gray-500 dark:bg-opacity-20 transition-all duration-200 hover:bg-gray-400 hover:bg-opacity-30 dark:hover:bg-gray-600 cursor-pointer"
               >
                 Home
               </motion.div>
