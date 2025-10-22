@@ -2,7 +2,7 @@ import HelloWorld from './title.mdx'
 import Subtitle from './subtitle.mdx'
 import HomeBody from './homeBody.mdx'
 import Link from 'next/link'
-import { Github, Linkedin, ArrowUpRight } from "lucide-react";
+import { Github, Linkedin, ArrowUpRight } from 'lucide-react';
 import TechnicalSkills from './technicalSkills.mdx'
 
 export default function Page() {
