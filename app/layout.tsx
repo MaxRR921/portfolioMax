@@ -40,7 +40,7 @@ function DarkModeToggle() {
       className="fixed top-4 right-4 p-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded-md shadow-md"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
-      {theme === "dark" ? "🌞 Light Mode" : "🌙 Dark Mode"}
+      {theme === "dark" ? "🌞" : "🌙"}
     </button>
   );
 }

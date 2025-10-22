@@ -25,14 +25,21 @@ export default function Page() {
             </div>
 
             {/* Social Links */}
-            <div className="flex justify-start mt-4"> {/* Increased spacing */}
-              <Link href="https://www.linkedin.com/in/maxwell-richter-0b8a671b9/" className="custom-underline2 pr-1">
-                <span className="hover:bg-stone-700 rounded-md px-2 py-1">
+            <div className="flex justify-start mt-4 space-x-2">
+              <Link
+                href="https://www.linkedin.com/in/maxwell-richter-0b8a671b9/"
+                className="transition-all duration-300 transform hover:scale-110 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium"
+              >
+                <span className="px-2 py-1 rounded-md hover:bg-stone-700/50">
                   LinkedIn
                 </span>
               </Link>
-              <Link href="https://github.com/MaxRR921" className="custom-underline2 pl-1">
-                <span className="hover:bg-stone-700 rounded-md px-2 py-1">
+
+              <Link
+                href="https://github.com/MaxRR921"
+                className="transition-all duration-300 transform hover:scale-110 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white font-medium"
+              >
+                <span className="px-2 py-1 rounded-md hover:bg-stone-700/50">
                   GitHub
                 </span>
               </Link>
