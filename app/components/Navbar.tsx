@@ -24,10 +24,10 @@ export const Navbar = () => {
   if (!mounted) return null;
 
   return (
-    <div className="h-32 flex lg:justify-center justify-start bg-stone-200 dark:bg-black relative">
+    <div className="h-32 flex lg:justify-center justify-start bg-stone-200 dark:bg-black relative ml-10">
       <div className="flex lg:w-5/12 items-center relative">
         {/* Navigation Links */}
-        <div className="relative flex space-x-15">
+        <div className="relative flex space-x-10">
           
           {/* Home Link with Background Highlight */}
           <div className="relative flex flex-col items-center">
