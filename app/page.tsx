@@ -20,6 +20,9 @@ export default function Page() {
   return (
     <div className="page-stack">
       <section className="surface-card">
+        <h1 className="text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl">
+          Maxwell Richter
+        </h1>
         <p className="text-lg text-slate-600 dark:text-slate-300">
           Computer Science @ Chapman University
         </p>
