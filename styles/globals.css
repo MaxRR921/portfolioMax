@@ -1,29 +1,65 @@
-@import url("https://fonts.googleapis.com/css2?family=Borel&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply bg-stone-200 text-black dark:bg-black dark:text-gray-400; /* Fix: Apply text-gray-200 only in dark mode */
-    }
-    h1 {
-        @apply text-black dark:text-gray-400 text-2xl; /* Fix: Ensure text is black in light mode */
-    }
-    h2 {
-        @apply bg-stone-200 text-black dark:bg-black dark:text-gray-400 text-xl; /* Fix: Ensure text is black in light mode */
-    }
+  html {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  body {
+    @apply min-h-screen bg-slate-50 text-slate-700 antialiased dark:bg-slate-950 dark:text-slate-200;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
 }
 
+@layer components {
+  .site-shell {
+    @apply mx-auto w-full max-w-5xl px-5 pb-16 pt-8;
+  }
 
-@layer utilities {
-    .custom-underline {
-        text-decoration: underline;
-        text-underline-offset: 4px; /* Adjusts the underline to be 4px below the text */
-    }
-    .custom-underline2 {
-        text-decoration: underline;
-        text-underline-offset: 2px; /* A smaller offset for a more subtle underline */
-    }
+  .page-stack {
+    @apply mx-auto flex w-full max-w-3xl flex-col gap-4;
+  }
+
+  .surface-card {
+    @apply rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900;
+  }
+
+  .content-block {
+    @apply leading-relaxed;
+  }
+
+  .content-block p {
+    @apply mb-4;
+  }
+
+  .content-block a {
+    @apply font-medium text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-700 dark:text-slate-100 dark:decoration-slate-600 dark:hover:decoration-slate-300;
+  }
+
+  .content-block ul {
+    @apply ml-5 list-disc space-y-2;
+  }
+
+  .content-block img {
+    @apply mt-4 rounded-xl border border-slate-200 dark:border-slate-700;
+  }
+
+  .section-title {
+    @apply mb-4 text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100;
+  }
+
+  .pill-link {
+    @apply inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-slate-300 hover:text-slate-950 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:border-slate-600 dark:hover:text-white;
+  }
+
+  .project-card {
+    @apply flex items-center justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-slate-300 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-slate-700;
+  }
 }

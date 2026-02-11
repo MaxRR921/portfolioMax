@@ -2,8 +2,7 @@
 
 import "../styles/globals.css";
 import Navbar from "./components/Navbar";
-import { ThemeProvider, useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { ThemeProvider } from "next-themes";
 
 export default function RootLayout({
   children,
@@ -11,37 +10,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head />
       <body>
-        <ThemeProvider enableSystem={true} attribute="class">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
-          <DarkModeToggle /> {/* Add the toggle button */}
-          {children}
+          <main className="site-shell">{children}</main>
         </ThemeProvider>
       </body>
     </html>
   );
 }
-
-// Dark mode toggle button component
-function DarkModeToggle() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null; // Avoid hydration mismatch
-
-  return (
-    <button
-      className="fixed top-4 right-4 p-2 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded-md shadow-md"
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-    >
-      {theme === "dark" ? "🌞" : "🌙"}
-    </button>
-  );
-}
-
