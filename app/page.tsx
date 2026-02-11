@@ -20,17 +20,11 @@ export default function Page() {
   return (
     <div className="page-stack">
       <section className="surface-card">
-        <p className="text-sm font-medium uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
-          Software Engineer
-        </p>
-        <h1 className="mt-3 text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl">
-          Maxwell Richter
-        </h1>
-        <p className="mt-3 text-lg text-slate-600 dark:text-slate-300">
+        <p className="text-lg text-slate-600 dark:text-slate-300">
           Computer Science @ Chapman University
         </p>
 
-        <div className="mt-6 flex flex-wrap gap-3">
+        <div className="mt-4 flex flex-wrap gap-3">
           {socialLinks.map(({ href, label, icon: Icon }) => (
             <Link key={label} href={href} className="pill-link" target="_blank">
               <Icon size={16} />
