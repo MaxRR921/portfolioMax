@@ -6,13 +6,13 @@ const projects = [
     href: "/projects/stressSensor",
     title: "Fiber Optic Stress Sensor",
     description:
-      "Stress sensor to evaluate material characteristics of different tissues.",
+      "Real-time Python software and hardware integration for a fiber optic sensing research platform.",
   },
   {
     href: "/projects/RopedTogether",
     title: "Roped Together",
     description:
-      "3D mountain-climbing game and winner at the Oregon Game Project Challenge 2022.",
+      "3D mountain-climbing game that won the Judge's Choice Award at the Oregon Game Project Challenge 2023.",
   },
   {
     href: "/projects/RopeSim",
@@ -24,7 +24,7 @@ const projects = [
     href: "/projects/LayerJot",
     title: "AI Hand Washing Tool",
     description:
-      "Computer vision coaching experience developed in collaboration with LayerJot.",
+      "AI handwashing coaching tool built with OpenCV and PyTorch; First Place at the 2024 Fowler Engineering GCI Showcase.",
   },
   {
     href: "/projects/Dance",
