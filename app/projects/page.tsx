@@ -45,11 +45,8 @@ export default function Page() {
     <div className="page-stack">
       <section className="surface-card">
         <h1 className="text-3xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
-          Selected Projects
+          Projects
         </h1>
-        <p className="mt-3 text-slate-600 dark:text-slate-300">
-          A mix of software engineering, creative technology, and interactive systems.
-        </p>
       </section>
 
       <section className="grid gap-4">
