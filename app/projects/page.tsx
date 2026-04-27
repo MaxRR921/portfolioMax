@@ -32,12 +32,6 @@ const projects = [
     description:
       "Procedural camera movement, lighting, and animation workflow for performance production.",
   },
-  {
-    href: "/projects/HarmonicSeries",
-    title: "Harmonic Series Teacher Website",
-    description:
-      "Educational music website focused on teaching harmonic series concepts.",
-  },
 ];
 
 export default function Page() {
