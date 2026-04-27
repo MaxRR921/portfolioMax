@@ -1,21 +1,6 @@
-import Link from "next/link";
 import Image from "next/image";
 import HomeBody from "./homeBody.mdx";
 import TechnicalSkills from "./technicalSkills.mdx";
-import { ArrowUpRight, Github, Linkedin } from "lucide-react";
-
-const socialLinks = [
-  {
-    href: "https://www.linkedin.com/in/maxwell-richter-0b8a671b9/",
-    label: "LinkedIn",
-    icon: Linkedin,
-  },
-  {
-    href: "https://github.com/MaxRR921",
-    label: "GitHub",
-    icon: Github,
-  },
-];
 
 export default function Page() {
   return (
@@ -39,29 +24,9 @@ export default function Page() {
           </div>
 
           <div className="space-y-5">
-            <div className="space-y-3">
-              <h1 className="collidable max-w-xl text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl">
-                Maxwell Richter
-              </h1>
-              <p className="max-w-2xl text-base leading-7 text-slate-600 dark:text-slate-300">
-                I build software for research, interactive systems, and creative
-                technology, with a focus on real-time experiences and thoughtful
-                product work.
-              </p>
-            </div>
-
-            <div className="flex flex-wrap gap-3">
-              {socialLinks.map(({ href, label, icon: Icon }) => (
-                <Link key={label} href={href} className="pill-link group">
-                  <Icon className="h-4 w-4" aria-hidden="true" />
-                  <span>{label}</span>
-                  <ArrowUpRight
-                    className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-                    aria-hidden="true"
-                  />
-                </Link>
-              ))}
-            </div>
+            <h1 className="collidable max-w-xl text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl">
+              Maxwell Richter
+            </h1>
           </div>
         </div>
       </section>
