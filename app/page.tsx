@@ -40,9 +40,6 @@ export default function Page() {
 
           <div className="space-y-5">
             <div className="space-y-3">
-              <p className="inline-flex w-fit items-center rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-sky-700 dark:border-sky-900/60 dark:bg-sky-950/50 dark:text-sky-300">
-                Software Developer
-              </p>
               <h1 className="collidable max-w-xl text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl">
                 Maxwell Richter
               </h1>
