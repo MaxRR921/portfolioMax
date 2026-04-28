@@ -61,10 +61,6 @@ export default function Page() {
               <h1 className="collidable max-w-xl text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl">
                 Maxwell Richter
               </h1>
-              <p className="max-w-2xl text-base leading-7 text-slate-600 dark:text-slate-300">
-                Building software for research, interactive systems, and creative
-                technology.
-              </p>
               <div className="max-w-2xl">
                 <HomeBody />
               </div>
