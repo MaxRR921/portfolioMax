@@ -1,6 +1,21 @@
+import Link from "next/link";
 import Image from "next/image";
 import HomeBody from "./homeBody.mdx";
 import TechnicalSkills from "./technicalSkills.mdx";
+import { ArrowUpRight, Github, Linkedin } from "lucide-react";
+
+const socialLinks = [
+  {
+    href: "https://www.linkedin.com/in/maxwell-richter-0b8a671b9/",
+    label: "LinkedIn",
+    icon: Linkedin,
+  },
+  {
+    href: "https://github.com/MaxRR921",
+    label: "GitHub",
+    icon: Github,
+  },
+];
 
 export default function Page() {
   return (
@@ -27,6 +42,18 @@ export default function Page() {
             <h1 className="collidable max-w-xl text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl">
               Maxwell Richter
             </h1>
+            <div className="flex flex-wrap gap-3">
+              {socialLinks.map(({ href, label, icon: Icon }) => (
+                <Link key={label} href={href} className="pill-link group">
+                  <Icon className="h-4 w-4" aria-hidden="true" />
+                  <span>{label}</span>
+                  <ArrowUpRight
+                    className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                    aria-hidden="true"
+                  />
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
