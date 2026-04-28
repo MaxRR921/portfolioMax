@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import HomeBody from "./homeBody.mdx";
 import TechnicalSkills from "./technicalSkills.mdx";
-import { ArrowUpRight, Github, Linkedin } from "lucide-react";
+import { ArrowUpRight, Award, Github, Linkedin, Sparkles } from "lucide-react";
 
 const socialLinks = [
   {
@@ -16,6 +16,15 @@ const socialLinks = [
     icon: Github,
   },
 ];
+
+const featuredProject = {
+  href: "/projects/stressSensor",
+  title: "Fiber Optic Stress Sensor",
+  summary:
+    "Award-winning research in fiber optic sensing, presented at Photonics West 2026.",
+  detail:
+    "Real-time Python software, device integration, and signal processing for high-precision analysis.",
+};
 
 export default function Page() {
   return (
@@ -39,9 +48,20 @@ export default function Page() {
           </div>
 
           <div className="space-y-5">
-            <h1 className="collidable max-w-xl text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl">
-              Maxwell Richter
-            </h1>
+            <div className="space-y-3">
+              <p className="inline-flex w-fit items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-amber-700 dark:border-amber-900/60 dark:bg-amber-950/40 dark:text-amber-300">
+                <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
+                Featured research
+              </p>
+              <h1 className="collidable max-w-xl text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl">
+                Maxwell Richter
+              </h1>
+              <p className="max-w-2xl text-base leading-7 text-slate-600 dark:text-slate-300">
+                Building software for research, interactive systems, and creative
+                technology.
+              </p>
+            </div>
+
             <div className="flex flex-wrap gap-3">
               {socialLinks.map(({ href, label, icon: Icon }) => (
                 <Link key={label} href={href} className="pill-link group">
@@ -58,11 +78,94 @@ export default function Page() {
         </div>
       </section>
 
+      <section className="grid gap-4 md:grid-cols-[1.1fr,0.9fr]">
+        <Link
+          href={featuredProject.href}
+          className="surface-card group relative overflow-hidden border-amber-200/70 bg-gradient-to-br from-amber-50 via-white to-sky-50 shadow-sm transition hover:-translate-y-0.5 dark:border-amber-900/50 dark:from-amber-950/20 dark:via-slate-900 dark:to-slate-900"
+        >
+          <div className="absolute right-0 top-0 h-28 w-28 rounded-full bg-amber-200/30 blur-3xl dark:bg-amber-400/10" />
+          <div className="relative">
+            <div className="mb-4 flex items-center gap-2 text-sm font-semibold text-amber-700 dark:text-amber-300">
+              <Award className="h-4 w-4" aria-hidden="true" />
+              Photonics West highlight
+            </div>
+            <h2 className="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+              {featuredProject.title}
+            </h2>
+            <p className="mt-3 max-w-xl text-sm leading-6 text-slate-600 dark:text-slate-300">
+              {featuredProject.summary}
+            </p>
+            <p className="mt-2 max-w-xl text-sm leading-6 text-slate-600 dark:text-slate-300">
+              {featuredProject.detail}
+            </p>
+            <div className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-slate-900 dark:text-slate-100">
+              View project
+              <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+            </div>
+          </div>
+        </Link>
+
+        <section className="surface-card content-block">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
+            Focus areas
+          </p>
+          <ul className="space-y-3 text-sm leading-6 text-slate-600 dark:text-slate-300">
+            <li>Real-time research software and device integration</li>
+            <li>Interactive systems and creative technical work</li>
+            <li>Project development in Python, C#, and Unity</li>
+            <li>Awarded research presented at Photonics West 2026</li>
+          </ul>
+        </section>
+      </section>
+
       <section className="surface-card content-block">
         <p className="mb-5 max-w-2xl text-sm font-medium uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
           About
         </p>
         <HomeBody />
+      </section>
+
+      <section className="surface-card content-block">
+        <div className="mb-5 flex items-end justify-between gap-4">
+          <div>
+            <p className="text-sm font-medium uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
+              Selected work
+            </p>
+            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
+              Projects worth a closer look
+            </h2>
+          </div>
+          <Link
+            href="/projects"
+            className="hidden text-sm font-medium text-slate-600 underline decoration-slate-300 underline-offset-4 hover:text-slate-900 dark:text-slate-300 dark:decoration-slate-600 dark:hover:text-white sm:inline"
+          >
+            Browse all projects
+          </Link>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2">
+          <Link href="/projects/stressSensor" className="project-tile group">
+            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-700 dark:text-amber-300">
+              Research
+            </span>
+            <h3 className="mt-2 text-lg font-semibold text-slate-900 dark:text-slate-100">
+              Fiber Optic Stress Sensor
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
+              Award-winning sensing research with real-time software and analysis.
+            </p>
+          </Link>
+          <Link href="/projects/RopedTogether" className="project-tile group">
+            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-700 dark:text-sky-300">
+              Game dev
+            </span>
+            <h3 className="mt-2 text-lg font-semibold text-slate-900 dark:text-slate-100">
+              Roped Together
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
+              Award-winning mountain climbing game with a polished production feel.
+            </p>
+          </Link>
+        </div>
       </section>
 
       <section className="surface-card content-block">
