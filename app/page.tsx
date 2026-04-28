@@ -21,14 +21,17 @@ const recentAwards = [
   {
     title: "Best Early Career Researcher Award",
     detail: "Photonics West 2026 for fiber optic stress sensor research.",
+    href: "/projects/stressSensor",
   },
   {
     title: "1st Place, Chapman GCI Award",
     detail: "AI hand-washing tool project recognized at the Fowler Engineering showcase.",
+    href: "/projects/LayerJot",
   },
   {
     title: "FIRE Summer Research Grant",
     detail: "$7,000 awarded for each of the 2024 and 2025 summers.",
+    href: "/projects/stressSensor",
   },
 ];
 
@@ -62,6 +65,9 @@ export default function Page() {
                 Building software for research, interactive systems, and creative
                 technology.
               </p>
+              <div className="max-w-2xl">
+                <HomeBody />
+              </div>
             </div>
 
             <div className="flex flex-wrap gap-3">
@@ -100,9 +106,10 @@ export default function Page() {
           </div>
           <div className="space-y-4">
             {recentAwards.map((award) => (
-              <div
+              <Link
                 key={award.title}
-                className="rounded-2xl border border-slate-200 bg-slate-50/80 p-4 dark:border-slate-800 dark:bg-slate-950/40"
+                href={award.href}
+                className="group block rounded-2xl border border-slate-200 bg-slate-50/80 p-4 transition hover:-translate-y-0.5 hover:border-slate-300 dark:border-slate-800 dark:bg-slate-950/40 dark:hover:border-slate-700"
               >
                 <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">
                   {award.title}
@@ -110,17 +117,10 @@ export default function Page() {
                 <p className="mt-1 text-sm leading-6 text-slate-600 dark:text-slate-300">
                   {award.detail}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
-      </section>
-
-      <section className="surface-card content-block">
-        <p className="mb-5 max-w-2xl text-sm font-medium uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
-          About
-        </p>
-        <HomeBody />
       </section>
 
       <section className="surface-card content-block">
