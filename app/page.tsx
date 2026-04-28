@@ -82,41 +82,27 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="grid gap-4 md:grid-cols-[0.95fr,1.05fr]">
-        <section className="surface-card content-block">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
-            Focus areas
-          </p>
-          <ul className="space-y-3 text-sm leading-6 text-slate-600 dark:text-slate-300">
-            <li>Real-time research software and device integration</li>
-            <li>Interactive systems and creative technical work</li>
-            <li>Project development in Python, C#, and Unity</li>
-            <li>Research presentation and applied prototyping</li>
-          </ul>
-        </section>
-
-        <section className="surface-card overflow-hidden border-slate-200/80 dark:border-slate-800">
-          <div className="mb-4 flex items-center gap-2 text-sm font-semibold text-slate-900 dark:text-slate-100">
-            <Award className="h-4 w-4 text-amber-600 dark:text-amber-300" aria-hidden="true" />
-            Recent awards
-          </div>
-          <div className="space-y-4">
-            {recentAwards.map((award) => (
-              <Link
-                key={award.title}
-                href={award.href}
-                className="group block rounded-2xl border border-slate-200 bg-slate-50/80 p-4 transition hover:-translate-y-0.5 hover:border-slate-300 dark:border-slate-800 dark:bg-slate-950/40 dark:hover:border-slate-700"
-              >
-                <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">
-                  {award.title}
-                </h3>
-                <p className="mt-1 text-sm leading-6 text-slate-600 dark:text-slate-300">
-                  {award.detail}
-                </p>
-              </Link>
-            ))}
-          </div>
-        </section>
+      <section className="surface-card overflow-hidden border-slate-200/80 dark:border-slate-800">
+        <div className="mb-4 flex items-center gap-2 text-sm font-semibold text-slate-900 dark:text-slate-100">
+          <Award className="h-4 w-4 text-amber-600 dark:text-amber-300" aria-hidden="true" />
+          Recent awards
+        </div>
+        <div className="grid gap-4 md:grid-cols-3">
+          {recentAwards.map((award) => (
+            <Link
+              key={award.title}
+              href={award.href}
+              className="group block rounded-2xl border border-slate-200 bg-slate-50/80 p-4 transition hover:-translate-y-0.5 hover:border-slate-300 dark:border-slate-800 dark:bg-slate-950/40 dark:hover:border-slate-700"
+            >
+              <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">
+                {award.title}
+              </h3>
+              <p className="mt-1 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                {award.detail}
+              </p>
+            </Link>
+          ))}
+        </div>
       </section>
 
       <section className="surface-card content-block">
@@ -156,7 +142,7 @@ export default function Page() {
               Roped Together
             </h3>
             <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
-              Award-winning mountain climbing game with a polished production feel.
+              Award-winning mountain climbing game.
             </p>
           </Link>
         </div>
